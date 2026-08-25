@@ -180,12 +180,10 @@ require_once __DIR__ . '/../config.php';
   </div>
 
   <!-- Copyright Sub-Footer Bar -->
-  <div class="row" id="copyright" data-layout="default" style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 25px; padding-top: 15px; padding-bottom: 15px; margin-bottom: 0 !important;">
+  <div class="row" id="copyright" data-layout="default" style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 15px; padding-top: 12px; padding-bottom: 12px; margin-bottom: 0 !important;">
     <div class="container text-center">
       <p class="mb-0 text-center" style="color: #888888; font-size: 0.875rem;">
-        &copy; <?php echo date('Y'); ?> Brands Shift. All rights reserved. 
-        <a href="#" class="open-modal-btn text-white-50 text-decoration-none hover-white ms-1">Legal Docs</a> | 
-        <a href="#" class="open-modal-btn text-white-50 text-decoration-none hover-white ms-1">Privacy Policy</a>
+        &copy; <?php echo date('Y'); ?> Brands Shift. All rights reserved.
       </p>
     </div>
   </div>

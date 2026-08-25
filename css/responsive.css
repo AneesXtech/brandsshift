@@ -113,6 +113,8 @@
   .swe-portfolio-carousel-wrapper {
     overflow: hidden !important;
     width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
     cursor: grab !important;
   }
 
@@ -124,14 +126,21 @@
     margin-bottom: 0.35rem !important;
   }
 
+  /* Single Centered Card Viewport: 100% Clips Side Cards */
   .swe-portfolio-carousel-container {
-    padding: 0 16px !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: calc(100vw - 32px) !important;
+    max-width: calc(100vw - 32px) !important;
+    overflow: hidden !important;
+    border-radius: 16px !important;
   }
 
   .swe-portfolio-carousel-track {
     gap: 16px !important;
     align-items: stretch !important;
     display: flex !important;
+    width: max-content !important;
     user-select: none !important;
     -webkit-user-select: none !important;
   }

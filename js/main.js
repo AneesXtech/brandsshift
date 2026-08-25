@@ -83,6 +83,32 @@ function initHeaderScroll() {
  * Mobile Navigation Drawer & Accordion Controller
  */
 function initMobileNavDrawer() {
+  const mainMenu = document.getElementById('mainmenu');
+  const header = document.querySelector('.menu-header');
+  const toggleBtn = document.querySelector('.menu-header--toggle');
+  const closeBtn = document.querySelector('.bf-mobile-drawer-close');
+
+  if (mainMenu) {
+    mainMenu.addEventListener('show.bs.collapse', () => {
+      document.body.classList.add('mobile-drawer-open');
+      if (header) header.classList.add('drawer-open');
+    });
+
+    mainMenu.addEventListener('hidden.bs.collapse', () => {
+      document.body.classList.remove('mobile-drawer-open');
+      if (header) header.classList.remove('drawer-open');
+    });
+  }
+
+  if (closeBtn && mainMenu) {
+    closeBtn.addEventListener('click', () => {
+      const bsCollapse = bootstrap.Collapse.getInstance(mainMenu);
+      if (bsCollapse) {
+        bsCollapse.hide();
+      }
+    });
+  }
+
   const dropdownItems = document.querySelectorAll('.menu-header--main-menu .nav-item.dropdown');
   
   dropdownItems.forEach(item => {

@@ -158,9 +158,7 @@ require_once __DIR__ . '/../config.php';
                 <h4 class="text-uppercase font-weight-bold mb-3" style="color: #D3207C; font-size: 0.875rem; letter-spacing: 0.05em; font-weight: 700;">PARTNERSHIPS &amp; AWARDS</h4>
                 <div class="row g-2 align-items-center">
                   <div class="col-4 text-start">
-                    <a href="https://www.google.com/partners/agency?id=6422850005" target="_blank" rel="noopener noreferrer" class="d-block">
-                      <img decoding="async" src="assets/images/google-partner.png" alt="Google Partner Badge" class="img-fluid" style="max-height: 52px; width: auto; object-fit: contain;">
-                    </a>
+                    <img decoding="async" src="assets/images/google-partner.png" alt="Google Partner Badge" class="img-fluid" style="max-height: 52px; width: auto; object-fit: contain;">
                   </div>
                   <div class="col-4 text-center">
                     <img src="assets/images/awards-1.png" alt="Award 1" class="img-fluid" style="max-height: 52px; width: auto; object-fit: contain;">

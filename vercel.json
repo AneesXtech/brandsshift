@@ -1,11 +1,8 @@
 {
-  "version": 2,
   "functions": {
-    "*.php": {
-      "runtime": "vercel-php@0.7.3"
-    },
     "api/*.php": {
-      "runtime": "vercel-php@0.7.3"
+      "runtime": "vercel-php@0.9.0",
+      "includeFiles": "{includes/**,config.php,index.php,process-contact.php}"
     }
   },
   "routes": [
@@ -26,16 +23,20 @@
       "dest": "/media/$1"
     },
     {
-      "src": "/(.*\\.(?:webp|png|jpg|jpeg|svg|ico|mp4|css|js))",
+      "src": "/(.*\\.(?:webp|png|jpg|jpeg|svg|ico|mp4|css|js|woff|woff2|ttf|eot))",
       "dest": "/$1"
     },
     {
-      "src": "/(.*\\.php)",
-      "dest": "/$1"
+      "src": "/process-contact",
+      "dest": "/api/process-contact.php"
+    },
+    {
+      "src": "/process-contact.php",
+      "dest": "/api/process-contact.php"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.php"
+      "dest": "/api/index.php"
     }
   ]
 }

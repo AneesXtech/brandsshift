@@ -388,6 +388,13 @@ function initPortfolioCarousel() {
     const gap = parseFloat(window.getComputedStyle(track).gap) || 40;
     const offset = currentIndex * (cardWidth + gap);
     track.style.transform = `translateX(-${offset}px)`;
+
+    const counter = document.getElementById('sweMobileCounter');
+    if (counter) {
+      const currentFormatted = String(currentIndex + 1).padStart(2, '0');
+      const totalFormatted = String(totalCards).padStart(2, '0');
+      counter.textContent = `${currentFormatted} / ${totalFormatted}`;
+    }
   };
 
   const nextSlide = () => {

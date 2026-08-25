@@ -213,6 +213,18 @@ require_once __DIR__ . '/../config.php';
         </div>
       </div>
     </div>
+
+    <!-- Mobile Bottom Navigation Controls (Left/Right Arrows + Counter) -->
+    <div class="swe-portfolio-mobile-controls d-flex d-lg-none align-items-center justify-content-center gap-3 pt-3">
+      <button class="swe-portfolio-mobile-arrow swe-portfolio-prev" aria-label="Previous Project">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <span class="swe-portfolio-mobile-counter" id="sweMobileCounter">01 / 04</span>
+      <button class="swe-portfolio-mobile-arrow swe-portfolio-next" aria-label="Next Project">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
   </div>
 
   <!-- Bottom Centered 1:1 Nectar CTA Button: VIEW ALL CASE STUDIES -->

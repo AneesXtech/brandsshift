@@ -17,7 +17,9 @@
 
 /* Medium Desktop & Tablet Viewport (< 992px) */
 @media (max-width: 991px) {
-  .nav-menu, .header-cta-btn {
+
+  .nav-menu,
+  .header-cta-btn {
     display: none;
   }
 
@@ -106,10 +108,128 @@
     padding: 0 !important;
   }
 
+  /* Compact Portfolio Card on Mobile */
   .swe-portfolio-card {
-    padding: 1.5rem !important;
+    padding: 1.25rem !important;
     border-radius: 18px !important;
     width: 100% !important;
+  }
+
+  .swe-portfolio-card-title {
+    font-size: 1.15rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .swe-portfolio-img-wrap {
+    height: 190px !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+  }
+
+  .swe-portfolio-img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .swe-portfolio-subtitle {
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    line-height: 1.35 !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.35rem !important;
+  }
+
+  .swe-portfolio-desc {
+    font-size: 0.85rem !important;
+    line-height: 1.45 !important;
+    color: #555566 !important;
+    margin-bottom: 0.65rem !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Compact 3-Step Strategy, Design & Develop Pills on Mobile */
+  .swe-portfolio-card .row.g-3.pt-2 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.4rem !important;
+    padding-top: 0.25rem !important;
+  }
+
+  .swe-portfolio-card .swe-step-item {
+    padding: 0 !important;
+    border: none !important;
+    margin: 0 !important;
+  }
+
+  .swe-portfolio-card .swe-step-title {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    background: #F0EDF5 !important;
+    color: #722C89 !important;
+    padding: 0.25rem 0.6rem !important;
+    border-radius: 6px !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .swe-portfolio-card .swe-step-dot {
+    width: 5px !important;
+    height: 5px !important;
+    background-color: #D3207C !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+  }
+
+  .swe-portfolio-card .swe-step-desc {
+    display: none !important;
+  }
+
+  /* Mobile Bottom Navigation Controls */
+  .swe-portfolio-mobile-controls {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1.25rem !important;
+    margin-top: 1.25rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .swe-portfolio-mobile-arrow {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    background: linear-gradient(135deg, #722C89 0%, #D3207C 100%) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0.95rem !important;
+    box-shadow: 0 4px 14px rgba(211, 32, 124, 0.35) !important;
+    cursor: pointer !important;
+    transition: transform 0.2s ease !important;
+  }
+
+  .swe-portfolio-mobile-arrow:active {
+    transform: scale(0.92) !important;
+  }
+
+  .swe-portfolio-mobile-counter {
+    font-family: 'uncut-sans', monospace, sans-serif !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    color: #0A0A0B !important;
+    letter-spacing: 0.08em !important;
+    min-width: 65px !important;
+    text-align: center !important;
   }
 
   /* Specialist Digital Solutions Mobile Display Fix */
@@ -204,6 +324,7 @@
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -213,6 +334,7 @@
   0% {
     transform: translateX(-50%);
   }
+
   100% {
     transform: translateX(0%);
   }
@@ -323,6 +445,7 @@ body.mobile-drawer-open .menu-header--inner,
 
 /* Blue Frontier 1:1 Exact Mobile Drawer Styling */
 @media (max-width: 1199.98px) {
+
   /* Full screen modal drawer container */
   .menu-header--main-menu {
     position: fixed !important;
@@ -392,7 +515,7 @@ body.mobile-drawer-open .menu-header--inner,
     position: static !important;
     background: #FFFFFF !important;
     border-radius: 16px !important;
-    padding: 1.5rem !important;
+    padding: 1.5rem 0.8rem !important;
     margin: 0.5rem 0 1.25rem 0 !important;
     width: 100% !important;
     max-width: 100% !important;
@@ -406,7 +529,27 @@ body.mobile-drawer-open .menu-header--inner,
 
   .bf-megamenu-panel .row {
     flex-direction: column !important;
-    gap: 1.25rem !important;
+    gap: 0rem !important;
+  }
+
+  .element--hero-banner.hero-banner-one .element--hero-banner-content-wrapper {
+    padding-bottom: 20px;
+  }
+
+  .col-12.col-lg-8.col-xxl-7.element--hero-banner-content-column {
+    min-height: fit-content !important;
+  }
+
+  .element--hero-banner.hero-banner-one .element--hero-banner-content {
+    padding-top: 30px !important;
+  }
+
+  .element--scroll-list-item-content.col-12.col-lg-10 p.d-flex.flex-wrap.gap-2 {
+    gap: 0px !important;
+  }
+
+  .element--image-marquee {
+    padding: 0px;
   }
 
   .bf-megamenu-panel .col-12 {
@@ -443,134 +586,137 @@ body.mobile-drawer-open .menu-header--inner,
     font-size: 1rem !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
   }
-/* ==========================================================================
+
+  /* ==========================================================================
    GLOBAL MOBILE TYPOGRAPHY & COMPACT SCALING (Phones & Small Tablets)
    ========================================================================== */
-@media (max-width: 767.98px) {
-  /* 1. Global Headings Scaling */
-  h1, .h1 {
-    font-size: clamp(1.85rem, 7.5vw, 2.35rem) !important;
-    line-height: 1.15 !important;
-    letter-spacing: -0.02em !important;
+  @media (max-width: 767.98px) {
+
+    /* 1. Global Headings Scaling */
+    h1,
+    .h1 {
+      font-size: clamp(1.85rem, 7.5vw, 2.35rem) !important;
+      line-height: 1.15 !important;
+      letter-spacing: -0.02em !important;
+    }
+
+    h2,
+    .h2 {
+      font-size: clamp(1.45rem, 5.5vw, 1.95rem) !important;
+      line-height: 1.2 !important;
+      letter-spacing: -0.015em !important;
+    }
+
+    h3,
+    .h3 {
+      font-size: clamp(1.2rem, 4.5vw, 1.45rem) !important;
+      line-height: 1.25 !important;
+    }
+
+    h4,
+    .h4 {
+      font-size: 1.1rem !important;
+      line-height: 1.3 !important;
+    }
+
+    /* 2. Global Paragraphs & Content Text */
+    p,
+    .lead {
+      font-size: 0.925rem !important;
+      line-height: 1.55 !important;
+    }
+
+    /* 3. Section Taglines & Subtitle Badges */
+    .element--scroll-list-intro-subtitle,
+    .element--statement-intro-subtitle,
+    .element--case-studies-subtitle,
+    .element--testimonial-subtitle {
+      font-size: 0.75rem !important;
+      letter-spacing: 0.1em !important;
+    }
+
+    /* 4. Section Intro Headings */
+    .element--scroll-list-intro-heading h2,
+    .element--statement-heading h2,
+    .element--case-studies-heading h2,
+    .element--testimonial-heading h2 {
+      font-size: clamp(1.45rem, 5.5vw, 1.95rem) !important;
+      line-height: 1.2 !important;
+    }
+
+    /* 5. Statement Marquee Text */
+    .element--statement-content p {
+      font-size: 0.95rem !important;
+      line-height: 1.55 !important;
+    }
+
+    /* 6. Case Studies Cards */
+    .swe-portfolio-card-title,
+    .element--case-study-title h3 {
+      font-size: 1.2rem !important;
+      line-height: 1.25 !important;
+    }
+
+    .swe-portfolio-card-desc,
+    .element--case-study-content p {
+      font-size: 0.875rem !important;
+      line-height: 1.5 !important;
+    }
+
+    .swe-portfolio-pill,
+    .element--case-study-tag {
+      font-size: 0.75rem !important;
+      padding: 0.25rem 0.65rem !important;
+    }
+
+    /* 7. Testimonial Section */
+    .testimonial-quote-text,
+    .element--testimonial-quote {
+      font-size: 1.05rem !important;
+      line-height: 1.55 !important;
+    }
+
+    .testimonial-author-name {
+      font-size: 0.95rem !important;
+    }
+
+    .testimonial-author-role {
+      font-size: 0.825rem !important;
+    }
+
+    /* 8. News & Insights Article Cards */
+    .news-card-title,
+    .element--news-card h3 {
+      font-size: 1.15rem !important;
+      line-height: 1.3 !important;
+    }
+
+    .news-card-excerpt,
+    .element--news-card p {
+      font-size: 0.85rem !important;
+      line-height: 1.5 !important;
+    }
+
+    .news-card-date {
+      font-size: 0.75rem !important;
+    }
+
+    /* 9. Compact Section Padding */
+    section {
+      padding-top: 50px !important;
+      padding-bottom: 50px !important;
+    }
+
+    /* 10. Footer Sizing */
+    .bs-footer h4,
+    .widgettitle {
+      font-size: 0.875rem !important;
+    }
+
+    .bs-footer p,
+    .bs-footer a,
+    .widget ul li a {
+      font-size: 0.85rem !important;
+      line-height: 1.5 !important;
+    }
   }
-
-  h2, .h2 {
-    font-size: clamp(1.45rem, 5.5vw, 1.95rem) !important;
-    line-height: 1.2 !important;
-    letter-spacing: -0.015em !important;
-  }
-
-  h3, .h3 {
-    font-size: clamp(1.2rem, 4.5vw, 1.45rem) !important;
-    line-height: 1.25 !important;
-  }
-
-  h4, .h4 {
-    font-size: 1.1rem !important;
-    line-height: 1.3 !important;
-  }
-
-  /* 2. Global Paragraphs & Content Text */
-  p, .lead {
-    font-size: 0.925rem !important;
-    line-height: 1.55 !important;
-  }
-
-  /* 3. Section Taglines & Subtitle Badges */
-  .element--scroll-list-intro-subtitle,
-  .element--statement-intro-subtitle,
-  .element--case-studies-subtitle,
-  .element--testimonial-subtitle {
-    font-size: 0.75rem !important;
-    letter-spacing: 0.1em !important;
-  }
-
-  /* 4. Section Intro Headings */
-  .element--scroll-list-intro-heading h2,
-  .element--statement-heading h2,
-  .element--case-studies-heading h2,
-  .element--testimonial-heading h2 {
-    font-size: clamp(1.45rem, 5.5vw, 1.95rem) !important;
-    line-height: 1.2 !important;
-  }
-
-  /* 5. Statement Marquee Text */
-  .element--statement-content p {
-    font-size: 0.95rem !important;
-    line-height: 1.55 !important;
-  }
-
-  /* 6. Case Studies Cards */
-  .swe-portfolio-card-title,
-  .element--case-study-title h3 {
-    font-size: 1.2rem !important;
-    line-height: 1.25 !important;
-  }
-
-  .swe-portfolio-card-desc,
-  .element--case-study-content p {
-    font-size: 0.875rem !important;
-    line-height: 1.5 !important;
-  }
-
-  .swe-portfolio-pill,
-  .element--case-study-tag {
-    font-size: 0.75rem !important;
-    padding: 0.25rem 0.65rem !important;
-  }
-
-  /* 7. Testimonial Section */
-  .testimonial-quote-text,
-  .element--testimonial-quote {
-    font-size: 1.05rem !important;
-    line-height: 1.55 !important;
-  }
-
-  .testimonial-author-name {
-    font-size: 0.95rem !important;
-  }
-
-  .testimonial-author-role {
-    font-size: 0.825rem !important;
-  }
-
-  /* 8. News & Insights Article Cards */
-  .news-card-title,
-  .element--news-card h3 {
-    font-size: 1.15rem !important;
-    line-height: 1.3 !important;
-  }
-
-  .news-card-excerpt,
-  .element--news-card p {
-    font-size: 0.85rem !important;
-    line-height: 1.5 !important;
-  }
-
-  .news-card-date {
-    font-size: 0.75rem !important;
-  }
-
-  /* 9. Compact Section Padding */
-  section {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
-  }
-
-  /* 10. Footer Sizing */
-  .bs-footer h4,
-  .widgettitle {
-    font-size: 0.875rem !important;
-  }
-
-  .bs-footer p,
-  .bs-footer a,
-  .widget ul li a {
-    font-size: 0.85rem !important;
-    line-height: 1.5 !important;
-  }
-}
-
-
-
-

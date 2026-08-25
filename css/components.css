@@ -2689,27 +2689,35 @@ img[style*="display: block;"] {
   }
 }
 
-/* Right Section CTA Button */
-.menu-header--right {
-  flex: 0 0 auto !important;
-  min-width: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  margin-left: 1.5rem !important;
+/* Right Section CTA Button (Desktop Only) */
+@media (min-width: 1200px) {
+  .menu-header--right {
+    flex: 0 0 auto !important;
+    min-width: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    margin-left: 1.5rem !important;
+  }
+
+  .menu-header--right .link_wrap {
+    padding: 3px 4px 3px 18px !important;
+  }
+
+  .menu-header--right .nectar-cta .text {
+    font-size: 0.825rem !important;
+  }
+
+  .menu-header--right .arrow-circle-animation-arrow-wrap {
+    width: 30px !important;
+    height: 30px !important;
+  }
 }
 
-.menu-header--right .link_wrap {
-  padding: 3px 4px 3px 18px !important;
-}
-
-.menu-header--right .nectar-cta .text {
-  font-size: 0.825rem !important;
-}
-
-.menu-header--right .arrow-circle-animation-arrow-wrap {
-  width: 30px !important;
-  height: 30px !important;
+@media (max-width: 1199.98px) {
+  .menu-header--right {
+    display: none !important;
+  }
 }
 
 .bf-megamenu-panel {

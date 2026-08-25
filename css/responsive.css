@@ -40,11 +40,11 @@
     max-width: 100%;
   }
 
-  /* Mobile Hero Adjustments: 0px extra padding (60px navbar offset) & height auto */
+  /* Mobile Hero Adjustments: proper top padding so navbar never overlaps */
   .element--hero-banner-wrapper,
   .hero-banner-one {
-    padding-top: 60px !important;
-    padding-bottom: 20px !important;
+    padding-top: calc(var(--header-height, 80px) + 25px) !important;
+    padding-bottom: 30px !important;
     height: auto !important;
     min-height: auto !important;
   }
@@ -71,6 +71,46 @@
     min-height: 170px !important;
     height: 170px !important;
     max-height: 170px !important;
+  }
+
+  /* Specialist Digital Solutions Mobile Display Fix */
+  .element--scroll-list-wrapper,
+  .element--scroll-list-wrapper .flickity-wrapper {
+    display: block !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  .element--scroll-list-item {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    margin-right: 0 !important;
+    transform: none !important;
+    padding: 1.75rem 0 !important;
+    border-bottom: 1px solid #EAEAEA !important;
+  }
+
+  .element--scroll-list-item-number {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .element--scroll-list-item-number .monospace {
+    color: #D3207C !important;
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+  }
+
+  .element--scroll-list-item-content h3 a {
+    font-size: 1.45rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .element--scroll-list-item-content p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
   }
 
   /* Switch Dual Vertical Marquee to Dual Horizontal Continuous Marquee */
@@ -190,6 +230,23 @@
 
   .bs-footer-desc {
     max-width: 100%;
+  }
+
+  /* Back to Top Mobile Sizing */
+  #backToTop.swe-progress-btn {
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  #backToTop.swe-progress-btn .progress-ring {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  #backToTop.swe-progress-btn .progress-val {
+    font-size: 0.7rem !important;
   }
 }
 

@@ -384,9 +384,8 @@ function initPortfolioCarousel() {
 
   const updateCarousel = () => {
     if (cards.length === 0) return;
-    const cardWidth = cards[0].getBoundingClientRect().width;
-    const gap = parseFloat(window.getComputedStyle(track).gap) || 40;
-    const offset = currentIndex * (cardWidth + gap);
+    const card = cards[currentIndex] || cards[0];
+    const offset = card.offsetLeft;
     track.style.transform = `translateX(-${offset}px)`;
 
     const counter = document.getElementById('sweMobileCounter');
@@ -436,6 +435,11 @@ function initPortfolioCarousel() {
     }
   };
 
+  const resetAutoSlide = () => {
+    stopAutoSlide();
+    startAutoSlide();
+  };
+
   // Touch & Mouse Swipe / Drag Support
   let startX = 0;
   let currentX = 0;
@@ -453,9 +457,8 @@ function initPortfolioCarousel() {
     if (!isDragging) return;
     currentX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
     const diff = currentX - startX;
-    const cardWidth = cards[0].getBoundingClientRect().width;
-    const gap = parseFloat(window.getComputedStyle(track).gap) || 16;
-    const baseOffset = currentIndex * (cardWidth + gap);
+    const currentCard = cards[currentIndex] || cards[0];
+    const baseOffset = currentCard.offsetLeft;
     track.style.transform = `translateX(-${baseOffset - diff}px)`;
   };
 

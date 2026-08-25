@@ -137,21 +137,22 @@
   }
 
   .swe-portfolio-carousel-track {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding: 0 !important;
     margin: 0 !important;
     gap: 0 !important;
     align-items: stretch !important;
     display: flex !important;
-    width: max-content !important;
+    width: 100% !important;
     user-select: none !important;
     -webkit-user-select: none !important;
   }
 
   .swe-portfolio-card-item {
-    width: calc(100vw - 32px) !important;
-    max-width: calc(100vw - 32px) !important;
-    min-width: calc(100vw - 32px) !important;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
     padding: 0 !important;
     margin: 0 !important;
     display: flex !important;

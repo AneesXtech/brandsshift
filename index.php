@@ -27,8 +27,8 @@ include_once __DIR__ . '/includes/header.php';
   <!-- 8. Latest News & Updates (3-Column Article Cards) -->
   <?php include_once __DIR__ . '/includes/insights-section.php'; ?>
 
-  <!-- 9. Full-Width Consultation Banner CTA with Background Blur -->
-  <?php include_once __DIR__ . '/includes/cta-section.php'; ?>
+  <!-- 9. Full-Width Consultation Banner CTA (Hidden as requested) -->
+  <?php // include_once __DIR__ . '/includes/cta-section.php'; ?>
 
 </main>
 

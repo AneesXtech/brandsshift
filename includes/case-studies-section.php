@@ -34,7 +34,51 @@ require_once __DIR__ . '/../config.php';
       <div class="swe-portfolio-carousel-container">
         <div class="swe-portfolio-carousel-track" id="swePortfolioTrack">
           
-          <!-- Portfolio Card 1: Dezcon -->
+          <!-- Portfolio Card 1: J.E. Creations -->
+          <div class="swe-portfolio-card-item">
+            <div class="swe-portfolio-card">
+              <h3 class="swe-portfolio-card-title">J.E. Creations — Private Chef &amp; Catering</h3>
+              
+              <div class="row g-4 align-items-center">
+                <!-- Left Preview Image -->
+                <div class="col-12 col-lg-6">
+                  <div class="swe-portfolio-img-wrap">
+                    <img src="assets/images/portfolio-img/JE-Creation.png" alt="J.E. Creations Brand Website &amp; POS RMS System" class="swe-portfolio-img" loading="lazy">
+                  </div>
+                </div>
+
+                <!-- Right Case Study Overview & 3-Step Process -->
+                <div class="col-12 col-lg-6 ps-lg-4">
+                  <h4 class="swe-portfolio-subtitle">Brand Website + Restaurant Management System (POS &amp; Online Ordering)</h4>
+                  <p class="swe-portfolio-desc">We partnered with founder Jade Turner to build both the public-facing brand experience and operational backend — creating a luxury culinary website with multi-tier catering booking and integrated POS ordering.</p>
+                  
+                  <!-- 3-Step Strategy, Design & Develop Row -->
+                  <div class="row g-3 pt-2">
+                    <div class="col-12 col-md-4">
+                      <div class="swe-step-item">
+                        <div class="swe-step-title"><span class="swe-step-dot"></span>01 Strategy</div>
+                        <p class="swe-step-desc">We structured brand-driven booking flows, luxury catering menus, and digital payment roadmap.</p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="swe-step-item">
+                        <div class="swe-step-title"><span class="swe-step-dot"></span>02 Design</div>
+                        <p class="swe-step-desc">We crafted a warm, upscale gold-and-black aesthetic built on flavor, elegance, and culture.</p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="swe-step-item">
+                        <div class="swe-step-title"><span class="swe-step-dot"></span>03 Develop</div>
+                        <p class="swe-step-desc">We engineered a high-speed website integrated with POS transactions and seamless online ordering.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Card 2: Dezcon -->
           <div class="swe-portfolio-card-item">
             <div class="swe-portfolio-card">
               <h3 class="swe-portfolio-card-title">Dezcon</h3>

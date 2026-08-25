@@ -11,6 +11,7 @@
 
   # Process contact clean URL rewrite
   RewriteRule ^process-contact/?$ process-contact.php [L,QSA]
+  RewriteRule ^quote/?$ quote.php [L,QSA]
 </IfModule>
 
 # Enable GZIP / Deflate Compression for High Performance

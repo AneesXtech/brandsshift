@@ -6,7 +6,10 @@
 
 define('SITE_NAME', 'Brands Shift');
 define('SITE_TAGLINE', 'Elevating Brands Through Creative Strategy & Conversion-Focused Marketing');
-define('SITE_URL', 'http://localhost:8000');
+// Auto-detect dynamic domain & protocol for Local & Production (Hostinger)
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443)) ? "https://" : "http://";
+$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost:8000';
+define('SITE_URL', $protocol . $host);
 define('LOGO_PATH', 'assets/images/brandss-shift-logo.webp');
 
 // SEO Defaults

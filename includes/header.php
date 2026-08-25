@@ -70,7 +70,7 @@ require_once __DIR__ . '/../config.php';
         
         <!-- 1. About Dropdown -->
         <li class="nav-item dropdown w-100 w-xl-auto">
-          <a class="nav-link dropdown-toggle text-white font-weight-bold px-3 py-2 d-flex align-items-center justify-content-between" href="index.php#about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white font-weight-bold px-3 py-2 d-flex align-items-center justify-content-between" href="index.php#about" role="button">
             <span>About</span>
             <span class="bf-mobile-accordion-icon d-xl-none fs-4 fw-light">+</span>
           </a>
@@ -110,7 +110,7 @@ require_once __DIR__ . '/../config.php';
 
         <!-- 2. Web Design & Dev Dropdown -->
         <li class="nav-item dropdown w-100 w-xl-auto">
-          <a class="nav-link dropdown-toggle text-white font-weight-bold px-3 py-2 d-flex align-items-center justify-content-between" href="web-design.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white font-weight-bold px-3 py-2 d-flex align-items-center justify-content-between" href="web-design.php" role="button">
             <span>Web Design &amp; Dev</span>
             <span class="bf-mobile-accordion-icon d-xl-none fs-4 fw-light">+</span>
           </a>
@@ -159,7 +159,7 @@ require_once __DIR__ . '/../config.php';
 
         <!-- 3. Branding Dropdown -->
         <li class="nav-item dropdown w-100 w-xl-auto">
-          <a class="nav-link dropdown-toggle text-white font-weight-bold px-3 py-2 d-flex align-items-center justify-content-between" href="branding.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white font-weight-bold px-3 py-2 d-flex align-items-center justify-content-between" href="branding.php" role="button">
             <span>Branding</span>
             <span class="bf-mobile-accordion-icon d-xl-none fs-4 fw-light">+</span>
           </a>
@@ -208,7 +208,7 @@ require_once __DIR__ . '/../config.php';
 
         <!-- 4. Graphic Design Dropdown -->
         <li class="nav-item dropdown w-100 w-xl-auto">
-          <a class="nav-link dropdown-toggle text-white font-weight-bold px-3 py-2 d-flex align-items-center justify-content-between" href="graphic-design.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white font-weight-bold px-3 py-2 d-flex align-items-center justify-content-between" href="graphic-design.php" role="button">
             <span>Graphic Design</span>
             <span class="bf-mobile-accordion-icon d-xl-none fs-4 fw-light">+</span>
           </a>
@@ -257,7 +257,7 @@ require_once __DIR__ . '/../config.php';
 
         <!-- 5. Digital Marketing Dropdown -->
         <li class="nav-item dropdown w-100 w-xl-auto">
-          <a class="nav-link dropdown-toggle text-white font-weight-bold px-3 py-2 d-flex align-items-center justify-content-between" href="digital-marketing.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white font-weight-bold px-3 py-2 d-flex align-items-center justify-content-between" href="digital-marketing.php" role="button">
             <span>Digital Marketing</span>
             <span class="bf-mobile-accordion-icon d-xl-none fs-4 fw-light">+</span>
           </a>
@@ -306,7 +306,7 @@ require_once __DIR__ . '/../config.php';
 
         <!-- 6. App Development Dropdown -->
         <li class="nav-item dropdown w-100 w-xl-auto">
-          <a class="nav-link dropdown-toggle text-white font-weight-bold px-3 py-2 d-flex align-items-center justify-content-between" href="app-development.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white font-weight-bold px-3 py-2 d-flex align-items-center justify-content-between" href="app-development.php" role="button">
             <span>App Development</span>
             <span class="bf-mobile-accordion-icon d-xl-none fs-4 fw-light">+</span>
           </a>
@@ -357,7 +357,7 @@ require_once __DIR__ . '/../config.php';
 
       <!-- Mobile Drawer Pinned CTA Button (Screens < 1200px) -->
       <div class="bf-mobile-drawer-cta d-xl-none pt-4 pb-2 w-100">
-        <a href="contact.php" class="btn btn-light w-100 py-3 fw-bold text-dark rounded-3 fs-6 d-flex align-items-center justify-content-center open-modal-btn" style="background: #FFFFFF !important; color: #000000 !important; font-weight: 700; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+        <a href="contact.php" class="btn w-100 py-3 fw-bold rounded-3 fs-6 d-flex align-items-center justify-content-center open-modal-btn" style="background: linear-gradient(135deg, #722C89 0%, #D3207C 100%) !important; color: #FFFFFF !important; font-weight: 800; border-radius: 12px; box-shadow: 0 6px 20px rgba(211, 32, 124, 0.45); border: 1px solid rgba(255,255,255,0.25);">
           Contact Us
         </a>
       </div>

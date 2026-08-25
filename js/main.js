@@ -85,7 +85,6 @@ function initHeaderScroll() {
 function initMobileNavDrawer() {
   const mainMenu = document.getElementById('mainmenu');
   const header = document.querySelector('.menu-header');
-  const toggleBtn = document.querySelector('.menu-header--toggle');
   const closeBtn = document.querySelector('.bf-mobile-drawer-close');
 
   if (mainMenu) {
@@ -113,34 +112,44 @@ function initMobileNavDrawer() {
   
   dropdownItems.forEach(item => {
     const link = item.querySelector('.nav-link');
+    const icon = item.querySelector('.bf-mobile-accordion-icon');
+    const panel = item.querySelector('.bf-megamenu-panel');
     if (!link) return;
     
-    link.addEventListener('click', (e) => {
+    const toggleAccordion = (e) => {
       if (window.innerWidth < 1200) {
         e.preventDefault();
+        e.stopPropagation();
         const isOpen = item.classList.contains('is-open');
         
-        // Close siblings
+        // Close all other open dropdown siblings
         dropdownItems.forEach(otherItem => {
           if (otherItem !== item) {
             otherItem.classList.remove('is-open');
-            const icon = otherItem.querySelector('.bf-mobile-accordion-icon');
-            if (icon) icon.textContent = '+';
+            const otherIcon = otherItem.querySelector('.bf-mobile-accordion-icon');
+            if (otherIcon) otherIcon.textContent = '+';
+            const otherPanel = otherItem.querySelector('.bf-megamenu-panel');
+            if (otherPanel) otherPanel.classList.remove('show');
           }
         });
         
-        // Toggle active
+        // Toggle current dropdown
         if (isOpen) {
           item.classList.remove('is-open');
-          const icon = item.querySelector('.bf-mobile-accordion-icon');
           if (icon) icon.textContent = '+';
+          if (panel) panel.classList.remove('show');
         } else {
           item.classList.add('is-open');
-          const icon = item.querySelector('.bf-mobile-accordion-icon');
           if (icon) icon.textContent = '—';
+          if (panel) panel.classList.add('show');
         }
       }
-    });
+    };
+
+    link.addEventListener('click', toggleAccordion);
+    if (icon) {
+      icon.addEventListener('click', toggleAccordion);
+    }
   });
 }
 

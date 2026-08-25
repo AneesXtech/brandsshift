@@ -628,16 +628,17 @@ body.mobile-drawer-open .menu-header--inner,
   }
 
   .bf-mobile-drawer-cta .btn {
-    background: #FFFFFF !important;
-    color: #000000 !important;
+    background: linear-gradient(135deg, #722C89 0%, #D3207C 100%) !important;
+    color: #FFFFFF !important;
     font-weight: 800 !important;
     border-radius: 12px !important;
     height: 52px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    font-size: 1rem !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+    font-size: 1.05rem !important;
+    box-shadow: 0 6px 22px rgba(211, 32, 124, 0.45) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
   }
 
   /* ==========================================================================

@@ -58,6 +58,9 @@ require_once __DIR__ . '/../config.php';
                     </div>
                     <div class="element--scroll-list-item-content col-12 col-lg-10">
                       <h3><a href="services.php#web-design">Web Design &amp; Development</a></h3>
+                      <div class="element--scroll-list-mobile-img d-block d-lg-none my-3">
+                        <img src="assets/images/Website-Desing-Mockup.png" alt="Web Design &amp; Development" class="img-fluid rounded-4 shadow-sm w-100" style="max-height: 210px; object-fit: cover;" loading="lazy">
+                      </div>
                       <p>We build fast, mobile-friendly websites that don't just look professional &mdash; they bring in customers.</p>
                       <p class="d-flex flex-wrap gap-2">
                         <a class="btn-sm btn btn-light btn-rounded" href="services.php#web-design">Web Design</a>
@@ -76,6 +79,9 @@ require_once __DIR__ . '/../config.php';
                     </div>
                     <div class="element--scroll-list-item-content col-12 col-lg-10">
                       <h3><a href="services.php#branding">Branding</a></h3>
+                      <div class="element--scroll-list-mobile-img d-block d-lg-none my-3">
+                        <img src="assets/images/Branding.png" alt="Branding &amp; Identity" class="img-fluid rounded-4 shadow-sm w-100" style="max-height: 210px; object-fit: cover;" loading="lazy">
+                      </div>
                       <p>From startups to established businesses, we help brands across law, construction, media, and retail build identities people remember.</p>
                       <p class="d-flex flex-wrap gap-2">
                         <a class="btn-sm btn btn-light btn-rounded" href="services.php#branding">Logo Design</a>
@@ -94,6 +100,9 @@ require_once __DIR__ . '/../config.php';
                     </div>
                     <div class="element--scroll-list-item-content col-12 col-lg-10">
                       <h3><a href="services.php#app-development">App Development</a></h3>
+                      <div class="element--scroll-list-mobile-img d-block d-lg-none my-3">
+                        <img src="assets/images/Mobile-App.png" alt="App Development" class="img-fluid rounded-4 shadow-sm w-100" style="max-height: 210px; object-fit: cover;" loading="lazy">
+                      </div>
                       <p>Apps built for real users, tested before launch, and supported after &mdash; so your business works as hard as you do, even when you're offline.</p>
                       <p class="d-flex flex-wrap gap-2">
                         <a class="btn-sm btn btn-light btn-rounded" href="services.php#app-development">iOS &amp; Android Apps</a>
@@ -112,6 +121,9 @@ require_once __DIR__ . '/../config.php';
                     </div>
                     <div class="element--scroll-list-item-content col-12 col-lg-10">
                       <h3><a href="services.php#digital-marketing">Digital Marketing</a></h3>
+                      <div class="element--scroll-list-mobile-img d-block d-lg-none my-3">
+                        <img src="assets/images/Digital-Marketing.png" alt="Digital Marketing &amp; SEO" class="img-fluid rounded-4 shadow-sm w-100" style="max-height: 210px; object-fit: cover;" loading="lazy">
+                      </div>
                       <p>Backed by data, not guesswork. Our SEO and ad campaigns are built to bring measurable traffic and real leads &mdash; not just vanity numbers.</p>
                       <p class="d-flex flex-wrap gap-2">
                         <a class="btn-sm btn btn-light btn-rounded" href="services.php#digital-marketing">SEO</a>
@@ -130,6 +142,9 @@ require_once __DIR__ . '/../config.php';
                     </div>
                     <div class="element--scroll-list-item-content col-12 col-lg-10">
                       <h3><a href="services.php#graphic-design">Graphic Design</a></h3>
+                      <div class="element--scroll-list-mobile-img d-block d-lg-none my-3">
+                        <img src="assets/images/Graphic-Desining.png" alt="Graphic Design" class="img-fluid rounded-4 shadow-sm w-100" style="max-height: 210px; object-fit: cover;" loading="lazy">
+                      </div>
                       <p>Every design is checked against your brand guidelines before it goes out &mdash; so everything you share looks consistent and professional.</p>
                       <p class="d-flex flex-wrap gap-2">
                         <a class="btn-sm btn btn-light btn-rounded" href="services.php#graphic-design">Social Media Graphics</a>

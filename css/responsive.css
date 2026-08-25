@@ -137,7 +137,10 @@
   }
 
   .swe-portfolio-carousel-track {
-    gap: 16px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+    gap: 0 !important;
     align-items: stretch !important;
     display: flex !important;
     width: max-content !important;
@@ -150,6 +153,7 @@
     max-width: calc(100vw - 32px) !important;
     min-width: calc(100vw - 32px) !important;
     padding: 0 !important;
+    margin: 0 !important;
     display: flex !important;
     flex-direction: column !important;
     flex-shrink: 0 !important;

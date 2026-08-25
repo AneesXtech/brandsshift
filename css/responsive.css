@@ -98,8 +98,8 @@
 
   /* Mobile Case Studies Section Padding & Spacing Resets */
   .swe-portfolio-section {
-    padding-top: 45px !important;
-    padding-bottom: 45px !important;
+    padding-top: 40px !important;
+    padding-bottom: 35px !important;
   }
 
   .swe-portfolio-section .container.pt-4 {
@@ -107,55 +107,96 @@
   }
 
   .swe-portfolio-section .row.text-center.mb-5 {
-    margin-bottom: 1.25rem !important;
+    margin-bottom: 1.15rem !important;
+  }
+
+  .swe-portfolio-carousel-wrapper {
+    overflow: hidden !important;
+    width: 100% !important;
+    cursor: grab !important;
+  }
+
+  .swe-portfolio-carousel-wrapper:active {
+    cursor: grabbing !important;
   }
 
   .swe-portfolio-carousel-wrapper.mb-5 {
-    margin-bottom: 0.75rem !important;
+    margin-bottom: 0.35rem !important;
+  }
+
+  .swe-portfolio-carousel-container {
+    padding: 0 16px !important;
   }
 
   .swe-portfolio-carousel-track {
-    gap: 1rem !important;
+    gap: 16px !important;
+    align-items: stretch !important;
+    display: flex !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
   }
 
   .swe-portfolio-card-item {
-    width: calc(100vw - 30px) !important;
-    max-width: 100% !important;
-    min-width: calc(100vw - 30px) !important;
+    width: calc(100vw - 32px) !important;
+    max-width: calc(100vw - 32px) !important;
+    min-width: calc(100vw - 32px) !important;
     padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-shrink: 0 !important;
   }
 
-  /* Ultra-Compact Clean Portfolio Card on Mobile */
+  /* Ultra-Compact Clean Portfolio Card with 100% Equal Height on Mobile */
   .swe-portfolio-card {
     padding: 1.15rem !important;
     border-radius: 16px !important;
     width: 100% !important;
+    height: 100% !important;
+    min-height: 405px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    box-sizing: border-box !important;
   }
 
   .swe-portfolio-card-title {
     font-size: 1.15rem !important;
     line-height: 1.25 !important;
-    margin-bottom: 0.6rem !important;
+    margin-bottom: 0.55rem !important;
+    min-height: 24px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
   }
 
   .swe-portfolio-img-wrap {
     height: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
     border-radius: 12px !important;
     overflow: hidden !important;
+    margin-bottom: 0.5rem !important;
   }
 
   .swe-portfolio-img {
     height: 100% !important;
     width: 100% !important;
     object-fit: cover !important;
+    pointer-events: none !important;
   }
 
   .swe-portfolio-subtitle {
     font-size: 0.95rem !important;
     font-weight: 700 !important;
     line-height: 1.35 !important;
-    margin-top: 0.4rem !important;
+    margin-top: 0.25rem !important;
     margin-bottom: 0.3rem !important;
+    min-height: 38px !important;
+    max-height: 38px !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
   }
 
   .swe-portfolio-desc {
@@ -163,10 +204,12 @@
     line-height: 1.45 !important;
     color: #555566 !important;
     margin-bottom: 0 !important;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    min-height: 55px !important;
+    max-height: 55px !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
   }
 
   /* Remove 3-step strategy, design & develop pills on mobile completely */
@@ -180,15 +223,15 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    gap: 1.1rem !important;
-    margin-top: 0.85rem !important;
-    margin-bottom: 1.25rem !important;
+    gap: 1rem !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.85rem !important;
     padding-top: 0 !important;
   }
 
   .swe-portfolio-mobile-arrow {
-    width: 42px !important;
-    height: 42px !important;
+    width: 40px !important;
+    height: 40px !important;
     border-radius: 50% !important;
     background: linear-gradient(135deg, #722C89 0%, #D3207C 100%) !important;
     color: #FFFFFF !important;
@@ -196,7 +239,7 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    font-size: 0.9rem !important;
+    font-size: 0.85rem !important;
     box-shadow: 0 4px 12px rgba(211, 32, 124, 0.3) !important;
     cursor: pointer !important;
     transition: transform 0.2s ease !important;

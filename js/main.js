@@ -436,16 +436,53 @@ function initPortfolioCarousel() {
     }
   };
 
-  const resetAutoSlide = () => {
+  // Touch & Mouse Swipe / Drag Support
+  let startX = 0;
+  let currentX = 0;
+  let isDragging = false;
+
+  const handleDragStart = (e) => {
+    isDragging = true;
+    startX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+    currentX = startX;
     stopAutoSlide();
-    startAutoSlide();
+    track.style.transition = 'none';
   };
 
-  if (carouselWrapper) {
-    carouselWrapper.addEventListener('mouseenter', stopAutoSlide);
-    carouselWrapper.addEventListener('mouseleave', startAutoSlide);
-  }
+  const handleDragMove = (e) => {
+    if (!isDragging) return;
+    currentX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+    const diff = currentX - startX;
+    const cardWidth = cards[0].getBoundingClientRect().width;
+    const gap = parseFloat(window.getComputedStyle(track).gap) || 16;
+    const baseOffset = currentIndex * (cardWidth + gap);
+    track.style.transform = `translateX(-${baseOffset - diff}px)`;
+  };
 
+  const handleDragEnd = () => {
+    if (!isDragging) return;
+    isDragging = false;
+    track.style.transition = 'transform 0.4s cubic-bezier(0.25, 1, 0.5, 1)';
+    const diff = currentX - startX;
+    if (diff < -40) {
+      nextSlide();
+    } else if (diff > 40) {
+      prevSlide();
+    } else {
+      updateCarousel();
+    }
+    resetAutoSlide();
+  };
+
+  track.addEventListener('touchstart', handleDragStart, { passive: true });
+  track.addEventListener('touchmove', handleDragMove, { passive: true });
+  track.addEventListener('touchend', handleDragEnd);
+
+  track.addEventListener('mousedown', handleDragStart);
+  window.addEventListener('mousemove', handleDragMove);
+  window.addEventListener('mouseup', handleDragEnd);
+
+  // Auto-scroll loop
   startAutoSlide();
   window.addEventListener('resize', updateCarousel, { passive: true });
 }

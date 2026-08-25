@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quetta Arafat Tea | Order Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --background-layout-color: #ffffff;
+            --navbar-background: #00387c;
+            --navbar-branch-text: #000000;
+            --navbar-phone-button-bg: #ffffff;
+            --navbar-phone-button-text: #000000;
+            --category-list-bg: #01377c;
+            --category-list-item-bg: #01377c;
+            --category-list-item-hover-bg: #ffce00;
+            --category-list-item-text: #ffce00;
+            --category-list-item-hover-text: #01377c;
+            --category-list-item-border: #01377c;
+            --category-list-item-active-border: #ffce00;
+            --category-heading-color: #000000;
+            --item-price-text-color: #ffcc00;
+            --item-price-background: transparent;
+            --allItemsBackground: #00387c;
+            --allItemsTextColor: #ffffff;
+            --background-color: #01377c;
+            --foreground-color: #ffffff;
+        }
+        body { font-family: 'Poppins', sans-serif; background-color: #f5f5f5; }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="antialiased font-sans">
+<main class="min-h-screen bg-[var(--background-layout-color)]">
+
+    <!-- Header / Navbar -->
+    <div class="w-full relative z-[10]">
+        <header class="w-full py-2 px-3 sm:py-2.5 sm:px-4 md:py-3 md:px-6 lg:px-10 relative" style="background: var(--navbar-background);">
+            <div class="relative flex items-center justify-between mx-auto gap-2 sm:gap-3 lg:gap-6 max-w-[1800px]">
+                <div class="flex items-center gap-1.5 sm:gap-2 lg:gap-3 flex-1">
+                    <div class="hidden sm:flex items-center gap-2 lg:gap-3">
+                        <!-- Location Button -->
+                        <button class="flex items-center justify-center sm:gap-1.5 sm:px-2.5 sm:py-1.5 bg-white rounded-full">
+                            <div class="flex flex-col text-start">
+                                <span class="text-[7px] font-bold text-gray-500 uppercase">Delivery</span>
+                                <span class="text-[11px] font-bold text-black">DHA Phase 8</span>
+                            </div>
+                        </button>
+                        <!-- Phone Button -->
+                        <a href="tel:03162269091" class="flex items-center justify-center sm:gap-1.5 sm:px-2.5 sm:py-1.5 bg-white rounded-full">
+                            <span class="text-[11px] font-bold text-black">📞 0316-2269091</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Center Logo Area -->
+                <div class="absolute left-1/2 -translate-x-1/2 bottom-[-40px] z-[999]">
+                    <div class="w-20 h-20 bg-white rounded-full border-4 border-yellow-400 flex items-center justify-center shadow-lg font-bold text-center leading-tight">
+                        <span class="text-[#00387c]">Quetta<br>Arafat</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-1.5 sm:gap-2 lg:gap-3 flex-1 justify-end">
+                    <!-- Cart Button -->
+                    <div class="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 lg:w-11 lg:h-11 rounded-full cursor-pointer bg-white relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-black"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                        <span class="absolute -top-1 -right-1 bg-yellow-400 text-black text-[10px] font-bold rounded-full px-1.5">0</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Banner Image -->
+    <div class="relative z-[1] w-[94%] mx-auto overflow-hidden rounded-2xl md:rounded-[2.5rem] my-6">
+        <img src="https://images.unsplash.com/photo-1589301773812-15f791e84a29?auto=format&fit=crop&q=80&w=1920" class="w-full h-48 object-cover" alt="Banner">
+    </div>
+
+    <!-- Category Navbar -->
+    <nav class="w-full sticky z-40 top-0">
+        <div class="w-full relative overflow-hidden bg-[var(--category-list-bg)]">
+            <div class="w-full sm:px-8 md:px-10">
+                <div class="flex items-center gap-2 md:gap-3.5 overflow-x-auto scrollbar-hide py-3 px-4 justify-center">
+                    <button class="px-4 py-2 text-[13px] font-semibold rounded-full bg-[var(--category-list-item-bg)] text-[var(--category-list-item-text)] border border-[var(--category-list-item-active-border)]">Stuffed Parathas</button>
+                    <button class="px-4 py-2 text-[13px] font-semibold rounded-full bg-[var(--category-list-item-bg)] text-[var(--category-list-item-text)] hover:bg-[var(--category-list-item-hover-bg)] hover:text-[#01377c] border border-[var(--category-list-item-border)]">Omelette Delights</button>
+                    <button class="px-4 py-2 text-[13px] font-semibold rounded-full bg-[var(--category-list-item-bg)] text-[var(--category-list-item-text)] hover:bg-[var(--category-list-item-hover-bg)] hover:text-[#01377c] border border-[var(--category-list-item-border)]">Desi Tea Blends</button>
+                    <button class="px-4 py-2 text-[13px] font-semibold rounded-full bg-[var(--category-list-item-bg)] text-[var(--category-list-item-text)] hover:bg-[var(--category-list-item-hover-bg)] hover:text-[#01377c] border border-[var(--category-list-item-border)]">Chilled Beverages</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Items Container -->
+    <div class="max-w-7xl mx-auto px-4 py-6">
+        
+        <!-- Category: Stuffed Parathas -->
+        <div class="mb-6">
+            <div class="flex items-center gap-2 mb-5">
+                <h2 class="text-2xl font-bold text-black">Stuffed Parathas</h2>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Item 1 -->
+                <div class="group cursor-pointer transition-all duration-300 hover:scale-[1.02]">
+                    <div class="relative w-full aspect-square overflow-hidden rounded-3xl bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1628191010210-a59de33e5941?auto=format&fit=crop&q=80&w=300" class="w-full h-full object-cover" alt="Arafat Signature Paratha">
+                    </div>
+                    <div class="relative px-3 pt-2.5 pb-3.5 h-[100px]">
+                        <h3 class="font-extrabold text-gray-800 text-[18px] leading-tight line-clamp-1">Arafat Signature Paratha</h3>
+                        <div class="mt-1.5">
+                            <span class="text-lg font-bold text-[var(--item-price-text-color)]">Rs. 660</span>
+                        </div>
+                    </div>
+                    <div class="absolute right-3 bottom-[110px] z-20">
+                        <button class="w-10 h-10 rounded-full flex items-center justify-center bg-[#01377c] text-white shadow-lg">+</button>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="group cursor-pointer transition-all duration-300 hover:scale-[1.02]">
+                    <div class="relative w-full aspect-square overflow-hidden rounded-3xl bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=300" class="w-full h-full object-cover" alt="Stuffed Pizza Paratha">
+                    </div>
+                    <div class="relative px-3 pt-2.5 pb-3.5 h-[100px]">
+                        <h3 class="font-extrabold text-gray-800 text-[18px] leading-tight line-clamp-1">Stuffed Pizza Paratha</h3>
+                        <div class="mt-1.5">
+                            <span class="text-lg font-bold text-[var(--item-price-text-color)]">Rs. 630</span>
+                        </div>
+                    </div>
+                    <div class="absolute right-3 bottom-[110px] z-20">
+                        <button class="w-10 h-10 rounded-full flex items-center justify-center bg-[#01377c] text-white shadow-lg">+</button>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="group cursor-pointer transition-all duration-300 hover:scale-[1.02]">
+                    <div class="relative w-full aspect-square overflow-hidden rounded-3xl bg-gray-200"></div>
+                    <div class="relative px-3 pt-2.5 pb-3.5 h-[100px]">
+                        <h3 class="font-extrabold text-gray-800 text-[18px] leading-tight line-clamp-1">Cheese BBQ Delight</h3>
+                        <div class="mt-1.5">
+                            <span class="text-lg font-bold text-[var(--item-price-text-color)]">Rs. 570</span>
+                        </div>
+                    </div>
+                    <div class="absolute right-3 bottom-[110px] z-20">
+                        <button class="w-10 h-10 rounded-full flex items-center justify-center bg-[#01377c] text-white shadow-lg">+</button>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="group cursor-pointer transition-all duration-300 hover:scale-[1.02]">
+                    <div class="relative w-full aspect-square overflow-hidden rounded-3xl bg-gray-200"></div>
+                    <div class="relative px-3 pt-2.5 pb-3.5 h-[100px]">
+                        <h3 class="font-extrabold text-gray-800 text-[18px] leading-tight line-clamp-1">Nutella Supreme Paratha</h3>
+                        <div class="mt-1.5">
+                            <span class="text-lg font-bold text-[var(--item-price-text-color)]">Rs. 580</span>
+                        </div>
+                    </div>
+                    <div class="absolute right-3 bottom-[110px] z-20">
+                        <button class="w-10 h-10 rounded-full flex items-center justify-center bg-[#01377c] text-white shadow-lg">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category: Desi Tea Blends -->
+        <div class="mb-6 mt-12">
+            <div class="flex items-center gap-2 mb-5">
+                <h2 class="text-2xl font-bold text-black">Desi Tea Blends</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- List Style Item 1 -->
+                <div class="relative rounded-2xl p-4 flex gap-4 transition-all duration-300 hover:scale-[1.03] bg-[var(--allItemsBackground)] shadow-sm">
+                    <div class="flex-1 flex flex-col">
+                        <h3 class="font-bold text-[17px] text-[var(--allItemsTextColor)]">Signature Chai</h3>
+                        <div class="mt-auto pt-3">
+                            <span class="text-[20px] font-bold text-[var(--item-price-text-color)]">Rs. 250</span>
+                        </div>
+                    </div>
+                    <div class="relative w-[130px] h-[130px] rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1576092762791-dd9e2220594f?auto=format&fit=crop&q=80&w=300" class="w-full h-full object-cover">
+                        <button class="absolute -bottom-2 -right-2 w-9 h-9 rounded-full bg-white text-[#01377c] flex items-center justify-center shadow-md font-bold">+</button>
+                    </div>
+                </div>
+
+                <!-- List Style Item 2 -->
+                <div class="relative rounded-2xl p-4 flex gap-4 transition-all duration-300 hover:scale-[1.03] bg-[var(--allItemsBackground)] shadow-sm">
+                    <div class="flex-1 flex flex-col">
+                        <h3 class="font-bold text-[17px] text-[var(--allItemsTextColor)]">Golden Saffron Tea</h3>
+                        <div class="mt-auto pt-3">
+                            <span class="text-[20px] font-bold text-[var(--item-price-text-color)]">Rs. 350</span>
+                        </div>
+                    </div>
+                    <div class="relative w-[130px] h-[130px] rounded-xl bg-gray-600 overflow-hidden">
+                        <button class="absolute -bottom-2 -right-2 w-9 h-9 rounded-full bg-white text-[#01377c] flex items-center justify-center shadow-md font-bold">+</button>
+                    </div>
+                </div>
+                
+                <!-- List Style Item 3 -->
+                <div class="relative rounded-2xl p-4 flex gap-4 transition-all duration-300 hover:scale-[1.03] bg-[var(--allItemsBackground)] shadow-sm">
+                    <div class="flex-1 flex flex-col">
+                        <h3 class="font-bold text-[17px] text-[var(--allItemsTextColor)]">Kashmir Special Tea</h3>
+                        <div class="mt-auto pt-3">
+                            <span class="text-[20px] font-bold text-[var(--item-price-text-color)]">Rs. 300</span>
+                        </div>
+                    </div>
+                    <div class="relative w-[130px] h-[130px] rounded-xl bg-gray-600 overflow-hidden">
+                        <button class="absolute -bottom-2 -right-2 w-9 h-9 rounded-full bg-white text-[#01377c] flex items-center justify-center shadow-md font-bold">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+</body>
+</html>

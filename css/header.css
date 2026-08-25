@@ -1,0 +1,392 @@
+/* Header & Navigation CSS - Brands Shift */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background-color: var(--bg-header);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 1000;
+  border-bottom: none;
+  transition: background-color var(--transition-smooth);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Header Left Group (CTA Button & Brand Logo) */
+.header-left-group {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* Brand Logo */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  z-index: 1002;
+}
+
+.brand-logo-img {
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+  transition: transform var(--transition-bounce);
+}
+
+.brand-logo:hover .brand-logo-img {
+  transform: scale(1.05);
+}
+
+/* Navigation Links & Mega Menu Styling */
+.mega-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.mega-dropdown {
+  position: relative;
+}
+
+.mega-dropdown .dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-main);
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: var(--color-black);
+  padding: 1.5rem 0.2rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.mega-dropdown .dropdown-toggle::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.25s ease;
+  margin-left: 0.25rem;
+}
+
+.mega-dropdown:hover .dropdown-toggle {
+  color: var(--color-purple);
+}
+
+.mega-dropdown:hover .dropdown-toggle::after {
+  transform: rotate(225deg) translateY(-2px);
+}
+
+/* Dropdown Megamenu Card Container */
+.dropdown-megamenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  width: max-content;
+  min-width: 540px;
+  max-width: 860px;
+  background-color: var(--bg-primary, #ffffff);
+  border: 1px solid var(--color-grey-border, #eaeaea);
+  border-radius: var(--radius-lg, 16px);
+  box-shadow: 0 20px 50px rgba(10, 10, 11, 0.18);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s ease;
+  z-index: 1100;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .dropdown-megamenu {
+  background-color: #121118;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.mega-dropdown:hover .dropdown-megamenu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-megamenu-inner {
+  display: flex;
+  padding: 1.75rem;
+  gap: 2rem;
+}
+
+.megamenu-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  min-width: 220px;
+}
+
+.megamenu-title-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--color-black);
+  text-decoration: none;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-grey-border);
+  transition: color var(--transition-fast);
+}
+
+.megamenu-title-link small {
+  font-family: var(--font-main);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+}
+
+.megamenu-title-link:hover {
+  color: var(--color-purple);
+}
+
+.megamenu-subtitle {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-pink);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.megamenu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.megamenu-list li a {
+  color: var(--color-text-main);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.megamenu-list li a:hover {
+  color: var(--color-purple);
+  transform: translateX(4px);
+}
+
+/* Overview Card inside Megamenu */
+.megamenu-overview-card {
+  background: var(--bg-tertiary, #f8f9fa);
+  border-radius: var(--radius-md, 12px);
+  padding: 1.5rem;
+  width: 250px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--color-grey-border);
+}
+
+[data-theme="dark"] .megamenu-overview-card {
+  background: #1e1c26;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.overview-card-badge {
+  align-self: flex-start;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 0.2rem 0.55rem;
+  background: var(--color-pink);
+  color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.overview-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--color-black);
+  margin-bottom: 0.5rem;
+}
+
+.overview-card-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.overview-card-link {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-purple);
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.overview-card-link:hover {
+  transform: translateX(4px);
+  color: var(--color-pink);
+}
+
+/* Header Actions Container */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* Dual Color Theme Toggle Switch */
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--color-grey-border);
+  color: var(--color-black);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all var(--transition-bounce);
+  cursor: pointer;
+}
+
+.theme-toggle-btn:hover {
+  border-color: var(--color-pink);
+  transform: translateY(-1px);
+}
+
+.theme-toggle-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.theme-toggle-btn:hover .theme-toggle-icon {
+  transform: rotate(360deg);
+}
+
+/* Clean White Contact Us Button (Blue Frontier Style) */
+.btn-white-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  color: #0A0A0B;
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.55rem 1.35rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+}
+
+.btn-white-contact:hover {
+  background-color: var(--color-purple, #722C89);
+  color: #FFFFFF;
+  border-color: var(--color-purple, #722C89);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(114, 44, 137, 0.35);
+}
+
+/* Mobile Navigation Hamburger Toggle */
+.mobile-toggle-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.mobile-toggle-btn span {
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--color-black);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.mobile-toggle-btn.is-active span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.mobile-toggle-btn.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-toggle-btn.is-active span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+
+/* Mobile Drawer Overlay */
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 380px;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  box-shadow: var(--shadow-lg);
+  z-index: 1001;
+  padding: 6rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-drawer.is-open {
+  right: 0;
+}
+
+.mobile-nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-nav-link {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-black);
+}

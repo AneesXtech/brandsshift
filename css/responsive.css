@@ -1,0 +1,317 @@
+/* Responsive Design & Breakpoints CSS - Brands Shift */
+
+/* Large Desktop Adjustments */
+@media (max-width: 1200px) {
+  .hero-heading {
+    font-size: 3.25rem;
+  }
+
+  .vert-area-slider {
+    height: 720px;
+  }
+
+  .vert-slider__elem {
+    height: 330px;
+  }
+}
+
+/* Medium Desktop & Tablet Viewport (< 992px) */
+@media (max-width: 991px) {
+  .nav-menu, .header-cta-btn {
+    display: none;
+  }
+
+  .mobile-toggle-btn {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .hero-description {
+    max-width: 100%;
+  }
+
+  /* Mobile Hero Adjustments: 0px extra padding (60px navbar offset) & height auto */
+  .element--hero-banner-wrapper,
+  .hero-banner-one {
+    padding-top: 60px !important;
+    padding-bottom: 20px !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  .bf-hero-title {
+    font-size: clamp(2rem, 8vw, 2.75rem) !important;
+    line-height: 1.1 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .bf-hero-title span.d-block {
+    font-size: clamp(1.4rem, 5.5vw, 1.9rem) !important;
+    margin-top: 4px !important;
+  }
+
+  .element--hero-banner-content-wrapper p {
+    font-size: 0.95rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .element--hero-banner-media-video,
+  .element--hero-banner-media-video video {
+    min-height: 170px !important;
+    height: 170px !important;
+    max-height: 170px !important;
+  }
+
+  /* Switch Dual Vertical Marquee to Dual Horizontal Continuous Marquee */
+  .vert-area-slider {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 1.25rem;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  }
+
+  .vert-area-slider__column {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .vertical-marquee-track {
+    flex-direction: row;
+    width: max-content;
+    gap: 1.25rem;
+  }
+
+  .column-up .vertical-marquee-track {
+    animation: marqueeLeft 20s linear infinite;
+  }
+
+  .column-down .vertical-marquee-track {
+    animation: marqueeRight 20s linear infinite;
+  }
+
+  .vert-slider__elem {
+    width: 290px;
+    height: 220px;
+    flex-shrink: 0;
+  }
+
+  .bs-footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .bs-footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Horizontal Animation Keyframes for Mobile & Tablet */
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Mobile Small Viewports (< 576px) */
+@media (max-width: 575px) {
+  .hero-section {
+    padding-top: calc(var(--header-height) + 1.5rem);
+    padding-bottom: 3.5rem;
+  }
+
+  .hero-heading {
+    font-size: 2.25rem;
+  }
+
+  .hero-description {
+    font-size: 1.025rem;
+  }
+
+  .btn-book-call {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .vert-slider__elem {
+    width: 240px;
+    height: 180px;
+  }
+
+  .vert-slider__elem-desc-title {
+    font-size: 1.2rem;
+  }
+
+  .modal-card {
+    padding: 1.75rem;
+  }
+
+  .bs-footer-top {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .bs-footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  .bs-footer-social {
+    justify-content: center;
+  }
+
+  .bs-footer-desc {
+    max-width: 100%;
+  }
+}
+
+/* Blue Frontier 1:1 Exact Mobile Drawer Styling */
+@media (max-width: 1199.98px) {
+  /* Full screen modal drawer container */
+  .menu-header--main-menu {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: #111113 !important;
+    z-index: 99999 !important;
+    padding: 1.5rem !important;
+    overflow-y: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+    transition: opacity 0.25s ease, transform 0.25s ease !important;
+  }
+
+  .menu-header--main-menu:not(.show) {
+    display: none !important;
+  }
+
+  .menu-header--main-menu .navbar-nav {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    gap: 0 !important;
+  }
+
+  .menu-header--main-menu .navbar-nav .nav-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+    width: 100% !important;
+  }
+
+  .menu-header--main-menu .navbar-nav .nav-link {
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+    padding: 1.1rem 0 !important;
+    color: #FFFFFF !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    text-decoration: none !important;
+  }
+
+  .bf-mobile-accordion-icon {
+    font-size: 1.5rem !important;
+    line-height: 1;
+    font-weight: 300;
+    color: #FFFFFF !important;
+    display: inline-block;
+  }
+
+  /* Expanded white card container inside mobile drawer (Image 2) */
+  .bf-megamenu-panel {
+    display: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    position: static !important;
+    background: #FFFFFF !important;
+    border-radius: 16px !important;
+    padding: 1.5rem !important;
+    margin: 0.5rem 0 1.25rem 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+  }
+
+  .nav-item.dropdown.is-open .bf-megamenu-panel,
+  .bf-megamenu-panel.show {
+    display: block !important;
+  }
+
+  .bf-megamenu-panel .row {
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+  }
+
+  .bf-megamenu-panel .col-12 {
+    width: 100% !important;
+  }
+
+  .bf-megamenu-panel .col-lg-5,
+  .bf-megamenu-panel .col-lg-7 {
+    width: 100% !important;
+  }
+
+  .bf-megamenu-card {
+    background: #242528 !important;
+    border-radius: 12px !important;
+    padding: 1.25rem !important;
+  }
+
+  /* Bottom Pinned White CTA Button (Images 2 & 3) */
+  .bf-mobile-drawer-cta {
+    margin-top: auto !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .bf-mobile-drawer-cta .btn {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    font-weight: 800 !important;
+    border-radius: 12px !important;
+    height: 52px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1rem !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+  }
+}
+
+
+

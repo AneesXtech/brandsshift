@@ -1,0 +1,73 @@
+/* CSS Variables & Theme Definitions - Brands Shift */
+
+:root {
+  /* Main Branding Color Palette */
+  --color-purple: #722C89;
+  --color-pink: #D3207C;
+  --color-gradient-primary: linear-gradient(135deg, #722C89 0%, #D3207C 100%);
+  --color-gradient-hover: linear-gradient(135deg, #8736a1 0%, #e02888 100%);
+  --color-gradient-glow: linear-gradient(135deg, rgba(114, 44, 137, 0.4) 0%, rgba(211, 32, 124, 0.4) 100%);
+
+  /* Default Light Theme Settings */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8F9FA;
+  --bg-tertiary: #F1F3F5;
+  --bg-card: #1E1E24;
+  --bg-header: rgba(255, 255, 255, 0.85);
+
+  --color-white: #FFFFFF;
+  --color-light-grey: #F8F9FA;
+  --color-grey-border: #EAEAEA;
+  --color-black: #0A0A0B;
+  --color-light-black: #1E1E24;
+  --color-text-main: #1A1A1E;
+  --color-text-muted: #5A5A66;
+  --color-text-subtle: #7A7A88;
+
+  /* Typography System */
+  --font-main: 'uncut-sans', arial, sans-serif;
+  --font-heading: 'uncut-sans', arial, sans-serif;
+
+  /* Border Radiuses */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 2px 8px rgba(10, 10, 11, 0.05);
+  --shadow-md: 0 10px 30px rgba(10, 10, 11, 0.08);
+  --shadow-lg: 0 20px 50px rgba(10, 10, 11, 0.12);
+  --shadow-glow: 0 12px 36px rgba(114, 44, 137, 0.35);
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Container Boundaries */
+  --container-max-width: 1360px;
+  --header-height: 84px;
+}
+
+/* Dual Color Mode: Dark Theme Overrides */
+[data-theme="dark"] {
+  --bg-primary: #0A0A0B;
+  --bg-secondary: #121215;
+  --bg-tertiary: #1A1A20;
+  --bg-card: #16161B;
+  --bg-header: rgba(10, 10, 11, 0.85);
+
+  --color-grey-border: #262630;
+  --color-black: #FFFFFF;
+  --color-light-black: #E1E1E6;
+  --color-text-main: #F1F3F5;
+  --color-text-muted: #A0A0B0;
+  --color-text-subtle: #6E6E80;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.7);
+}

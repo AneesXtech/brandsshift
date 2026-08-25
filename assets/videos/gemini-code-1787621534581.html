@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quetta Arafat Tea - Online Order</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .theme-bg {
+            background-color: #0b3969; /* Quetta Alamgir Blue */
+        }
+        .theme-text {
+            color: #0b3969;
+        }
+        .category-scroll::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="theme-bg text-white p-4 sticky top-0 z-50 shadow-md flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <div class="bg-white text-blue-900 font-bold rounded-full h-10 w-10 flex items-center justify-center text-xs text-center border-2 border-yellow-400">
+                QAT
+            </div>
+            <span class="font-bold text-lg hidden sm:block">Quetta Arafat Tea</span>
+        </div>
+        <div class="flex space-x-4">
+            <div class="bg-white text-black px-3 py-1 rounded-full text-sm font-medium flex items-center">
+                📞 0316-2269091
+            </div>
+            <button class="bg-yellow-400 text-blue-900 px-4 py-1 rounded-full font-bold">
+                Cart (0)
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <div class="w-full h-48 md:h-80 bg-gray-300 relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1589301773812-15f791e84a29?auto=format&fit=crop&q=80&w=1000" alt="Paratha Banner" class="w-full h-full object-cover opacity-80">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1 class="text-4xl md:text-6xl text-white font-extrabold drop-shadow-lg text-center">Authentic Flavours.<br>Warm Moments.</h1>
+        </div>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="flex overflow-x-auto space-x-2 p-4 category-scroll justify-start md:justify-center bg-white shadow-sm mb-6">
+        <button class="theme-bg text-white px-6 py-2 rounded-full font-semibold text-sm whitespace-nowrap">Stuffed Parathas</button>
+        <button class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full font-semibold text-sm whitespace-nowrap hover:bg-gray-300">Omelette Delights</button>
+        <button class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full font-semibold text-sm whitespace-nowrap hover:bg-gray-300">Desi Tea Blends</button>
+        <button class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full font-semibold text-sm whitespace-nowrap hover:bg-gray-300">Chilled Beverages</button>
+    </div>
+
+    <!-- Menu Section: Stuffed Parathas -->
+    <div class="max-w-6xl mx-auto px-4 mb-12">
+        <div class="theme-bg text-white text-center py-4 rounded-xl mb-6 shadow-md">
+            <h2 class="text-3xl font-serif tracking-widest">Stuffed Parathas</h2>
+        </div>
+        
+        <!-- Grid Items -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            
+            <!-- Item 1 -->
+            <div class="bg-white rounded-xl shadow p-3 relative flex flex-col justify-between border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1628191010210-a59de33e5941?auto=format&fit=crop&q=80&w=300" alt="Arafat Signature Paratha" class="w-full h-32 object-cover rounded-lg mb-3">
+                <h3 class="font-bold text-gray-800 text-sm md:text-base leading-tight mb-1">Arafat Signature Paratha</h3>
+                <div class="flex justify-between items-end mt-2">
+                    <span class="text-yellow-500 font-extrabold text-sm">Rs. 660</span>
+                    <button class="theme-bg text-white h-8 w-8 rounded-full flex items-center justify-center font-bold shadow-lg hover:bg-blue-800 transition">+</button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="bg-white rounded-xl shadow p-3 relative flex flex-col justify-between border border-gray-100">
+                <div class="w-full h-32 bg-gray-200 rounded-lg mb-3 flex items-center justify-center text-gray-400 text-xs">Image Placeholder</div>
+                <h3 class="font-bold text-gray-800 text-sm md:text-base leading-tight mb-1">Cheese BBQ Delight</h3>
+                <div class="flex justify-between items-end mt-2">
+                    <span class="text-yellow-500 font-extrabold text-sm">Rs. 570</span>
+                    <button class="theme-bg text-white h-8 w-8 rounded-full flex items-center justify-center font-bold shadow-lg hover:bg-blue-800 transition">+</button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="bg-white rounded-xl shadow p-3 relative flex flex-col justify-between border border-gray-100">
+                <div class="w-full h-32 bg-gray-200 rounded-lg mb-3 flex items-center justify-center text-gray-400 text-xs">Image Placeholder</div>
+                <h3 class="font-bold text-gray-800 text-sm md:text-base leading-tight mb-1">Nutella Supreme Paratha</h3>
+                <div class="flex justify-between items-end mt-2">
+                    <span class="text-yellow-500 font-extrabold text-sm">Rs. 580</span>
+                    <button class="theme-bg text-white h-8 w-8 rounded-full flex items-center justify-center font-bold shadow-lg hover:bg-blue-800 transition">+</button>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="bg-white rounded-xl shadow p-3 relative flex flex-col justify-between border border-gray-100">
+                <div class="w-full h-32 bg-gray-200 rounded-lg mb-3 flex items-center justify-center text-gray-400 text-xs">Image Placeholder</div>
+                <h3 class="font-bold text-gray-800 text-sm md:text-base leading-tight mb-1">Classic Paratha</h3>
+                <div class="flex justify-between items-end mt-2">
+                    <span class="text-yellow-500 font-extrabold text-sm">Rs. 70</span>
+                    <button class="theme-bg text-white h-8 w-8 rounded-full flex items-center justify-center font-bold shadow-lg hover:bg-blue-800 transition">+</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Menu Section: Desi Tea Blends -->
+    <div class="max-w-6xl mx-auto px-4 mb-12">
+        <div class="theme-bg text-white text-center py-4 rounded-xl mb-6 shadow-md">
+            <h2 class="text-3xl font-serif tracking-widest">Desi Tea Blends</h2>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <!-- Tea Item 1 -->
+            <div class="bg-white rounded-xl shadow p-3 relative flex flex-col justify-between border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1576092762791-dd9e2220594f?auto=format&fit=crop&q=80&w=300" alt="Signature Chai" class="w-full h-32 object-cover rounded-lg mb-3">
+                <h3 class="font-bold text-gray-800 text-sm md:text-base leading-tight mb-1">Signature Chai</h3>
+                <div class="flex justify-between items-end mt-2">
+                    <span class="text-yellow-500 font-extrabold text-sm">Rs. 250</span>
+                    <button class="theme-bg text-white h-8 w-8 rounded-full flex items-center justify-center font-bold shadow-lg hover:bg-blue-800 transition">+</button>
+                </div>
+            </div>
+            
+            <!-- Tea Item 2 -->
+            <div class="bg-white rounded-xl shadow p-3 relative flex flex-col justify-between border border-gray-100">
+                <div class="w-full h-32 bg-gray-200 rounded-lg mb-3 flex items-center justify-center text-gray-400 text-xs">Image Placeholder</div>
+                <h3 class="font-bold text-gray-800 text-sm md:text-base leading-tight mb-1">Golden Saffron Tea</h3>
+                <div class="flex justify-between items-end mt-2">
+                    <span class="text-yellow-500 font-extrabold text-sm">Rs. 350</span>
+                    <button class="theme-bg text-white h-8 w-8 rounded-full flex items-center justify-center font-bold shadow-lg hover:bg-blue-800 transition">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Checkout Bar (Mobile/Desktop) -->
+    <div class="fixed bottom-0 w-full bg-white border-t border-gray-200 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] p-4 flex justify-between items-center z-40">
+        <div>
+            <p class="text-xs text-gray-500">Total Amount</p>
+            <p class="theme-text font-extrabold text-xl">Rs. 0</p>
+        </div>
+        <button class="theme-bg text-white px-8 py-3 rounded-full font-bold shadow-lg flex items-center hover:bg-blue-800 transition">
+            View Cart & Checkout ➔
+        </button>
+    </div>
+    
+    <div class="h-20 w-full"></div> <!-- Spacing for fixed footer -->
+
+</body>
+</html>
